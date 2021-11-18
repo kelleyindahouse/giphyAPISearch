@@ -11,6 +11,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <div class="bg-light p-5 rounded-lg mb-3 row">
+      <h1 class="display-4">GIF Generator</h1>
+      <p class="lead">This is a simple application to generate and save random gifs that you like or for whatever sick reason you might have.
+      </p>
+      <hr class="my-4">
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <form>
+            <p>
+              <label for="keyword">GIF Search</label>
+              <input type="text" name="keyword" id="keyword">
+            </p>
+            <button id="search">Find GIF</button>
+          </form>
+        </div>
+        <hr>
+        <div id="showGifs" class="row">
+          <h6>GIFs appears here? Maybe.</h6>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h4>My Saved GIFs</h4>
+        <ul id="gifs" class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto saved">
+              <div class="fw-bold">This here be a saved gif</div>
+            </div>
+            <button class="btn btn-danger">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
